@@ -8,7 +8,8 @@
 
 ## Made day by day
 
-- Day 1 ```python
+- Day 1 
+```python
     - Setup
     - Connection
     - First Command
