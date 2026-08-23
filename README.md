@@ -8,12 +8,13 @@
 
 ## Made day by day
 
-- Day 1 {
+- Day 1 ```python
     - Setup
     - Connection
     - First Command
     - yt-dlp pip usage
     - Preview and downloaded msg End-to-End
+    ```
 }
 
 - Day 2 {
