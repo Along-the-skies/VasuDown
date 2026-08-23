@@ -23,6 +23,7 @@ def download_youtube_video(video_url,output_folder="data"):
         "merge_output_format": "mp4",
         "outtmpl": f"{output_folder}/%(title)s.%(ext)s",
         "progress_hooks" : [progress_hook],
+        'cookiefile': 'cookies.txt',
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
