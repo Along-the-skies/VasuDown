@@ -15,9 +15,9 @@
     - First Command
     - yt-dlp pip usage
     - Preview and downloaded msg End-to-End
-    ```
-}
-
+```
+```
 - Day 2 {
     Not yet
 }
+```
