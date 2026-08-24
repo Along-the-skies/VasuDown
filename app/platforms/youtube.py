@@ -19,11 +19,11 @@ def download_youtube_video(video_url,output_folder="data"):
     os.makedirs(output_folder, exist_ok=True)
 
     ydl_opts = {
-        "format": "bestvideo[vcodec^=avc1]+bestaudio[acodec^=mp4a]/best[ext=mp4]",
-        "merge_output_format": "mp4",
-        "outtmpl": f"{output_folder}/%(title)s.%(ext)s",
-        "progress_hooks" : [progress_hook],
-        'cookiefile': 'cookies.txt',
+    "format": "bv*+ba/b",
+    "merge_output_format": "mp4",
+    "outtmpl": f"{output_folder}/%(title)s.%(ext)s",
+    "progress_hooks": [progress_hook],
+    "cookiefile": "cookies.txt",
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
