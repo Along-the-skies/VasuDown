@@ -82,7 +82,7 @@ def download_media(ack, body, client):
     if response.get("ok"):
         try:
             os.remove(result)
-            print(f"Deleted {result} successfully after sending")
+            print(f"Deleted '{result}' successfully after sending")
         except OSError as e:
             print(f"failed to delete cache Error : {e}")
 

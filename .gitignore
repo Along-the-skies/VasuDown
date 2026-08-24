@@ -10,3 +10,4 @@ dist/
 data/*
 !data/.gitkeep
 tests/
+cookies.txt
