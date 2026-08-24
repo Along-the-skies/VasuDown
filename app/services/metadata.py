@@ -18,6 +18,8 @@ def get_metadata(url):
             "no_warnings": True,
             "skip_download": True,
             "cookiefile": str(COOKIES_FILE),
+            "format": "bestvideo[vcodec^=avc1]+bestaudio[acodec^=mp4a]/best[ext=mp4]",
+            "merge_output_format": "mp4",
         }
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
