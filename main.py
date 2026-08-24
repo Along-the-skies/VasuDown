@@ -73,11 +73,18 @@ def download_media(ack, body, client):
         )
         return
 
-    client.files_upload_v2(
+    response = client.files_upload_v2(
         channel=body["channel"]["id"],
         file=result,
         title=os.path.basename(result),
     )
+
+    if response.get("ok"):
+        try:
+            os.remove(result)
+            print(f"Deleted {result} successfully after sending")
+        except OSError as e:
+            print(f"failed to delete cache Error : {e}")
 
 
 if __name__ == "__main__":
