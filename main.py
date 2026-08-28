@@ -90,7 +90,7 @@ def download_media(ack, body, client):
 def status(ack,client,command):
     ack()
 
-    channel_id = client['channel_id']
+    channel_id = command['channel_id']
 
     client.chat_postMessage(
         channel = channel_id,
@@ -99,6 +99,7 @@ def status(ack,client,command):
 
 @app.command("/vasudown-help")
 def help(ack,client,command):
+    channel_id = command["channel_id"]
 
     help_text=f"Welcome to VasuDown\n-------------------------------\nVasudown is a slack bot to download youtube videos effortlessly\n-------------------------------\nHow to use\n --------\n get your youtube link -make sure it contain 'watch?' not 'shorts?' or something\n use command '/vasudown <youtube_url> \nwait for the preview\nOnce the preview loaded , click download\ndownload will send u the video as a file. you can download it by right clicking on the file\n-------------------------------\nUse '/vasudown-status' for the Bot status"
 
@@ -108,7 +109,7 @@ def help(ack,client,command):
         text=help_text
     )
 
-    channel_id = client["channel_id"]
+    
 if __name__ == "__main__":
     handler = SocketModeHandler(app, SLACK_APP_TOKEN)
     handler.start()
