@@ -28,3 +28,5 @@
     - Deployed at nest 
 
 ```
+
+# Alive 24/7 /invite @VasuDown to use in your channel
