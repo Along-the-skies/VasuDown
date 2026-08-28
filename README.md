@@ -1,6 +1,8 @@
-# VasuDown
+# VasuDown 
 ## A Slack-bot to view/download video from video sharing platforms eg:youtube,Instagram,Facebook etc..
-
+```text
+    Note:- Only youtube availible for v1.0 (current version)
+```
 ### Features
 - single command bot
 - Useful for those who dont have access to such platforms
@@ -18,7 +20,11 @@
 ```
 
 - Day 2 
-```
-    Not yet
+```python
+    - Bug fixes
+    - Youtube video downloader
+    - help,status commands
+    - Successful tests
+    - Deployed at nest 
 
 ```
