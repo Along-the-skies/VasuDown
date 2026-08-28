@@ -8,6 +8,23 @@
 - Useful for those who dont have access to such platforms
 - Completly legal and Copyright Filter to be maximum legit
 
+## Usage 
+### Download a Youtube Video 
+- get your youtube watch link (watch links have "watch?" somewhere in URL)
+- use command /vasudown {youtube URL}
+- wait for the preview 
+- click download
+- wait for the file
+- you will get the video as a mp4 thorugh slack download it from more (**⁝**)
+
+### Check if bot is alive 
+- open slack
+- use command /vasudown-status
+- if online you will get msg from VasuDown or a slackBot message will show
+
+### classic help command 
+- use /vasudown-help for a short description on VasuDown
+
 ## Made day by day
 
 - Day 1 
