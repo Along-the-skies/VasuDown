@@ -101,8 +101,27 @@ def status(ack,client,command):
 def help(ack,client,command):
     channel_id = command["channel_id"]
 
-    help_text=f"Welcome to VasuDown\n-------------------------------\nVasudown is a slack bot to download youtube videos effortlessly\n-------------------------------\nHow to use\n --------\n get your youtube link -make sure it contain 'watch?' not 'shorts?' or something\n use command '/vasudown <youtube_url> \nwait for the preview\nOnce the preview loaded , click download\ndownload will send u the video as a file. you can download it by right clicking on the file\n-------------------------------\nUse '/vasudown-status' for the Bot status"
+    help_text = f"""Welcome to VasuDown
+-------------------------------
 
+VasuDown is a Slack bot that lets you download YouTube videos directly from Slack.
+
+How to use
+-------------------------------
+
+1. Copy a YouTube video link.
+2. Run `/vasudown <youtube_url>`
+3. Wait for the video preview.
+4. Click the Download button.
+5. The video will be sent to the channel as a file.
+
+Note:
+Make sure you use a normal YouTube video link containing `watch?`.
+Shorts and other YouTube link formats may not work.
+
+-------------------------------
+
+Use `/vasudown-status` to check if VasuDown is online."""
     ack()
     client.chat_postMessage(
         channel=channel_id,
